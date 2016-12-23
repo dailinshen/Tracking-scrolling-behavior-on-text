@@ -1,0 +1,23 @@
+{
+  "name": "Track Scrolling",
+  "manifest_version": 2,
+  "version": "2.1",
+  "description": "This is a final project for Computational Journalism.",
+  "icons": { "128": "img/icon_128.png" },
+  "permissions": ["*://www.nytimes.com/", "webNavigation", "tabs", "activeTab","downloads"],
+  "content_scripts":[{
+    "matches":["*://www.nytimes.com/"],
+    "css":["css/record.css", "css/bootstrap.css"],
+    "js": ["js/jquery.js", "js/percent.js", "js/button.js", "js/time.js", "js/d3.min.js", "js/chart.js"]
+
+  }],
+  "background":{
+    "css": ["css/record.css"],
+    "scripts": ["js/record.js"],
+    "persistant": false
+  },
+  "browser_action": {
+    "default_icon": "img/icon_19.png"
+  }
+
+}

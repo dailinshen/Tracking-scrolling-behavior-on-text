@@ -1,0 +1,98 @@
+#scroll_percentage {
+	position:fixed;
+	bottom:20px;
+	right:30px;
+	background:rgba(44, 62, 80,.25);
+	width: 48px;
+	height: 48px;
+	font-size:18px;
+	line-height: 42px;
+	text-align: center;
+	border-radius: 50%;
+	padding: 16px;
+
+}
+#date_time {
+	position:fixed;
+	bottom:20px;
+	left:30px;
+	background:rgba(44, 62, 80,.25);
+	width: 48px;
+	height: 48px;
+	font-size:18px;
+	line-height: 42px;
+	text-align: center;
+	border-radius: 50%;
+	padding: 16px;
+}
+#new_button {
+	position: fixed;
+	bottom: 20px;
+	left: 12%;
+}
+#stop_button {
+	position: fixed;
+	bottom: 20px;
+	left: 24%;
+}
+#chart {
+	position:fixed;
+	top:30%;
+	background:rgba(255, 255, 255,1.0);
+	text-align: center;
+	left:22.5%;
+	width: 55%;
+}
+
+
+#outer_div{
+	max-width: 600px; 
+	max-height: 400px;
+	padding: 10px;
+}
+
+/*This is for d3 chart.*/
+.axis text {
+    font: 10px sans-serif;
+}
+.chartTitle {
+	font-size: 12px;
+	font-weight: bold;
+	text-anchor: middle; 
+}
+.axis .title {
+	font-weight: bold;
+	text-anchor: middle;
+}
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+.x.axis path {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+.nav .area {
+	fill: lightgrey;
+	stroke-width: 0px;
+}
+.nav .line {
+	fill: none;
+	stroke: darkgrey;
+	stroke-width: 1px;
+}
+.viewport {
+	stroke: grey;
+	fill: black;
+	fill-opacity: 0.3;
+}
+.viewport .extent {
+	fill: green;
+}
+.well {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
